@@ -1,3 +1,5 @@
 [user]
 	name = Rohit Mathulla
 	email = rohit_mathulla@yahoo.com
+[color]
+	ui = true
