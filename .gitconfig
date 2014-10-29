@@ -3,3 +3,12 @@
 	email = rohit_mathulla@yahoo.com
 [color]
 	ui = true
+[sendemail]
+	from = Rohit Mathulla <rohit_mathulla@yahoo.com>
+	smtpserver = smtp.mail.yahoo.com
+	smtpuser = rohit_mathulla
+	chainreplyto = false
+	smtpserverport = 465
+	smtpencryption = ssl
+[core]
+	pager = less -x1,5
