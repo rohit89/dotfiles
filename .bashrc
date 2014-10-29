@@ -112,5 +112,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
-PS1="${PS1::$((${#PS1}-3))}\$(__git_ps1 ' [\[\e[34;1m\]%s\[\e[0m\]]')\$ "
-
+PS1="${PS1::$((${#PS1}-3))}\$(__git_ps1 ' \[\e[33;1m\][%s]\[\e[0m\]')\n\$ "
+export TERM=xterm-256color
+if (( $UID == 0 )); then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+fi
