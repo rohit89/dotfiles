@@ -4,6 +4,8 @@ set ruler
 set number
 filetype on
 syntax on
+set background=dark
+colorscheme jellybeans
 " remember last opened position
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
