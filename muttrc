@@ -1,0 +1,51 @@
+set imap_user = "rohit_mathulla@yahoo.com"
+
+set smtp_url = "smtps://rohit_mathulla@smtp.mail.yahoo.com:465"
+set from = "Rohit Mathulla <rohit_mathulla@yahoo.com>"
+set ssl_force_tls = yes
+
+set folder = "imaps://imap.mail.yahoo.com:993"
+set spoolfile = "+INBOX"
+set postponed = "Draft"
+
+set header_cache=~/.mutt/cache/headers
+set move = no
+
+set editor=vim
+
+set sort=threads
+set sort_browser=date
+set sort_aux=reverse-last-date-received
+
+set mail_check = 60
+set timeout = 10
+
+# Index key bindings
+
+bind index gg first-entry
+bind index G last-entry
+bind index <tab> sync-mailbox
+bind index <space> collapse-thread
+
+# Pager View options
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+set menu_scroll
+set tilde
+unset markers
+
+# Pager key bindings
+bind pager <up> previous-line
+bind pager <down> next-line
+bind pager gg top
+bind pager G bottom
+
+# Compose Options
+set realname = "Rohit Mathulla"
+set edit_headers
+set fast_reply
+set askcc
+set reply_to
+set include
+
