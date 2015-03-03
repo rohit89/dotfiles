@@ -12,3 +12,6 @@
 	smtpencryption = ssl
 [core]
 	pager = less -x1,5
+	autocrlf = input
+[alias]
+	ls = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s\" --decorate
